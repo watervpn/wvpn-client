@@ -16,13 +16,6 @@ class Factory
      */
     public static function getInstance( $config = null ) 
     {
-        try{
-            $configPath = __DIR__.'/../../../wvpn/Config.php';
-            require_once($configPath);
-        }
-        catch(\Exception $e){
-            echo "error";
-        }
         return new Factory( new Config($config) );
     }
 
