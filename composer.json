@@ -17,7 +17,7 @@
             "Wvpn\\Client\\" : "src"
         },
         "files": [
-            "../../../wvpn/Config.php"
+            "../../../wvpn/ClientConfig.php"
         ]
     }
 }

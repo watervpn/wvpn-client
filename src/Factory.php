@@ -16,10 +16,10 @@ class Factory
      */
     public static function getInstance( $config = null ) 
     {
-        return new Factory( new Config($config) );
+        return new Factory( new ClientConfig($config) );
     }
 
-    public function __construct( Config $config ) 
+    public function __construct( ClientConfig $config ) 
     {
         $this->config = $config;
     }
