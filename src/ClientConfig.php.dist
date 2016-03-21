@@ -1,7 +1,7 @@
 <?php
 namespace Wvpn\Client;
 
-class Config{
+class ClientConfig{
     /**
      *
      */
@@ -16,9 +16,9 @@ class Config{
     {
         // merge custom config here
         if(!empty($config)){
-            $this->mergeConfigs( $config, Config::getDefaultConfigArray() );
+            $this->mergeConfigs( $config, static::getDefaultConfigArray() );
         }else{
-            $this->config = Config::getDefaultConfigArray();
+            $this->config = static::getDefaultConfigArray();
         }
     }
 
@@ -42,17 +42,17 @@ class Config{
             'service' => array(
                 'radius' => array(
                         'class'     => 'Wvpn\Client\ServiceClient\Radius',
-                        //'url'       => 'http://api-test.dev.alfredkan.com/radius/',
-                        'url'       => 'https://devws.watervpn.com/radius/',
-                        //'url'       => 'https://ws.watervpn.com/radius/',
+                        'url'       => 'http://api-test.dev.alfredkan.com/radius/',
+                        //'url'       => 'https://devws.username.com/radius/',
+                        //'url'       => 'https://ws.username.com/radius/',
                         'user'      => 'username',
                         'passwd'    => 'password',
                 ),
                 'openvpn' => array(
                         'class'     => 'Wvpn\Client\ServiceClient\Openvpn',
-                        //'url'       => 'http://api-test.dev.alfredkan.com/openvpn/',
-                        'url'       => 'https://devws.watervpn.com/openvpn/',
-                        //'url'       => 'https://ws.watervpn.com/openvpn/',
+                        'url'       => 'http://api-test.dev.alfredkan.com/openvpn/',
+                        //'url'       => 'https://devws.username.com/openvpn/',
+                        //'url'       => 'https://ws.username.com/openvpn/',
                         'user'      => 'username',
                         'passwd'    => 'password',
                 ),
