@@ -8,7 +8,7 @@ Please see the [composer.json](composer.json) file.
 Installation
 ------------
 
-###Install composer
+### Install composer
 First install composer if you don't have one:
 cd to the web root dir
 
@@ -16,7 +16,7 @@ cd to the web root dir
 curl -sS https://getcomposer.org/installer | php
 ```
 
-###Install wvpn/client package:
+### Install wvpn/client package:
 cd to the web root dir
 
 ```bash
@@ -25,8 +25,8 @@ mkdir wvpn
 cp vendor/wvpn/client/src/ClientConfig.php.dist wvpn/ClientConfig.php
 ```
 
-###Update config file
+### Update config file
 change uername & password in wvpn/ClientConfig.php
 
-###Ready to use
+### Ready to use
 require 'vendor/autoload.php';
