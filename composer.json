@@ -20,7 +20,4 @@
             "../../../wvpn/ClientConfig.php"
         ]
     },
-    "config": {
-        "secure-http": false
-    }
 }
